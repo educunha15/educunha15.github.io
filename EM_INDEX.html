@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang='pt-br'>
+
+
+	<head>
+		<title>Estação Meteorológica</title>
+		<link href = 'Estilo/reset.css' rel='stylesheet'>
+		<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
+		<link href = 'Estilo/Css2.css' rel='stylesheet'>
+		<script src="lib/app.js"></script>
+    	<script src="lib/database.js"></script>
+    	<script src="lib/codes.js"></script>
+    	<script src="lib/handlebars.js"></script>
+    	<script src="scriptem.js"></script>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<style>
+			body {background-color: white;} 
+			h1   {color: black;}
+			p    {color: black;}
+		</style>
+	</head>
+
+
+	<body>
+
+		<header>
+			<div class = 'boxi'>
+				<img id = 'logo' src='Insper-negativoapp.png' alt='#'>
+				<nav>
+					<ul id = "not">
+						<li>Notificações</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<div class = 'corpo'>
+			<div id = "est">
+
+				<h1>{{name}}</h1>
+
+			</div>
+
+			<div id = "st">
+
+				<h2 class = 'tit'>Áreas contempladas:</h2>
+			
+			</div>
+
+			<div id = 'boxi' class = 'txt'>
+
+				<ul class = 'ul'>
+					{{#each goals as |goal index|}}
+        				<li class="li">{{goal}}</li>
+      				{{/each}}
+				</ul>
+
+			</div>
+
+			<div id = "desc1">
+
+				<h2 class = 'tit'>Descrição:</h2>
+
+			</div>
+
+			<div id = "p1">
+
+					<p class = 'txt'>{{text}}</p>
+
+			</div>
+
+			<div id = 'p2'>
+
+				<p class = 'txt'></p>
+
+			</div>
+
+			<div id = 'p3'>
+
+				<p class = 'txt'></p>
+			
+			</div>
+
+
+
+			<h2 id = "OA" class = 'tit'>Objetivos de aprendizado:</h2>
+
+			<div id = "ol1" class = 'txt'>
+
+				<ol class = 'ol'>
+					{{#each objectives as |objective index|}}
+        				<li class="li">{{objective}}</li>
+      				{{/each}}
+				</ol>	
+			</div>
+		</div>
+	</body>
+</html>

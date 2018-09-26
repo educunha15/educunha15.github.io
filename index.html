@@ -1,0 +1,151 @@
+<!doctype html>
+
+<html lang='pt-br'>
+
+<head>
+
+	<title>Página Inicial</title>
+	<link href = 'Estilo/reset.css' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
+	<link href = 'Estilo/Css.css' rel='stylesheet'>
+	<script src="lib/app.js"></script>
+    <script src="lib/database.js"></script>
+    <script src="lib/codes.js"></script>
+    <script src="lib/handlebars.js"></script>
+    <script src="scriptpi.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+</head>
+
+
+
+		<body>
+
+			<header>
+				<div class = 'boxi'>
+					<img id = 'logo' src="Insper-negativoapp.png" alt='#'>
+					<nav>
+						<ul id = "not">
+							<li>Notificações</li>
+						</ul>
+
+					</nav>
+				</div>
+			</header>
+
+
+
+			<h1 id="Título_principal">Projetos Engenharia</h1>
+
+			<div class = 'boxtit'>
+
+					<div class = 'prog'>
+						<div class = "box1">
+						<h2 id="h2" class = 'tit'>{{name}}</h2>
+							<div id = "seta1" class ="seta">
+								<img src="seta.png" alt="#" class="fotoSeta">
+							</div>
+							<div id = "setaup1" class = 'seta_up'>
+								   <img src="setaUp.png" alt="#" class="fotoSetaUp">
+							</div>
+							<ul class = 'list' id="list1">
+								{{#each items as |item index|}}
+        					<li class="item"><a href="EM_INDEX.html?category={{categoria}}&course={{index}}">{{index}}</a></li>
+      					{{/each}}
+
+							</ul>
+
+						</div>
+					</div>
+
+					<div class = 'fqm'>
+						<div class = "box2">
+
+						<h2 id="h3" class = 'tit'>{{name}}</h2>
+							<div id = "seta2" class = 'seta '>
+								   <img src="seta.png" alt="#" class="fotoSeta">
+							</div>
+							<div id = "setaup2" class = 'seta_up'>
+								   <img src="setaUp.png" alt="#" class="fotoSetaUp">
+							</div>
+
+							<ul class = 'list' id="list2">
+								{{#each items as |item index|}}
+        					<li class="item"><a href="EM_INDEX.html?category={{categoria}}&course={{index}}">{{index}}</a></li>
+      					{{/each}}
+
+							</ul>
+
+						</div>
+					</div>
+
+					<div class = 'pep'>
+						<div class = "box3">
+						<h2 id = "h4" class = 'tit'>{{name}}</h2>
+							<div id = "seta3" class = 'seta '>
+								   <img src="seta.png" alt="#" class="fotoSeta">
+							</div>
+							<div id = "setaup3" class = 'seta_up'>
+								   <img src="setaUp.png" alt="#" class="fotoSetaUp ">
+							</div>
+							<ul class = 'list' id = "list3">
+								{{#each items as |item index|}}
+        					<li class="item"><a href="EM_INDEX.html?category={{categoria}}&course={{index}}">{{index}}</a></li>
+      					{{/each}}
+
+  							</ul>
+
+  						</div>
+					</div>
+
+					<div class = 'ted'>
+						<div class = "box4">
+
+						<h2 id = "h5" class = 'tit'>{{name}}</h2>
+							<div id = "seta4" class = 'seta '>
+								   <img src="seta.png" alt="#" class="fotoSeta">
+							</div>
+							<div id = "setaup4" class = 'seta_up'>
+								   <img src="setaUp.png" alt="#" class="fotoSetaUp">
+							</div>
+							<ul class = 'list' id = "list4">
+								{{#each items as |item index|}}
+        					<li class="item"><a href="EM_INDEX.html?category={{categoria}}&course={{index}}">{{index}}</a></li>
+      					{{/each}}
+
+							</ul>
+
+						</div>
+					</div>
+
+			</div>
+
+			<!-- <h1 id="ciclo">Ciclo específico</h1>
+
+			<div class = 'boxf'>
+
+				<div class = 'comp'>
+					<h2 id = "comp" class = 'tit'>Computação</h2>
+
+				</div>
+
+
+				<div class = 'mec'>
+					<h2 id = "mec" class = 'tit'>Mecânica</h2>
+
+
+				</div>
+
+				<div class = 'mecat'>
+					<h2 id = "mecat" class = 'tit'>Mecatrônica</h2>
+
+				</div>
+
+			</div> -->
+	</body>
+</html>
+
+
+<!-- ADICIONAR MEDIA HOVER NAS CATEGORIAS, MELHORAR A BARRA DE NOT -->
